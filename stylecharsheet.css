@@ -21,7 +21,6 @@ body {
     border: 1px solid #999;
     padding: 10px;
     resize: both;
-    overflow: auto;
     cursor: move;
   }
   
