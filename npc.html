@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>D&D NPC Character Sheet</title>
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+  <h1>NPC Character Sheet</h1>
+  <nav>
+    <a href="npc.html">NPCs</a> |
+    <a href="monster.html">Monsters</a> |
+    <a href="character.html">Characters</a>
+</nav>
+
+  <br>
+  <div class="char-manager">
+    <select id="charSelect"></select>
+    <input type="text" id="newCharName" placeholder="New npc name">
+    <button onclick="createCharacter()">Create</button>
+    <button onclick="deleteCharacter()">Delete</button>
+    <button onclick="loadSelectedCharacter()">Load</button>
+    <button onclick="deleteCharacter()">Save</button>
+  </div>
+
+  <div class="field">
+    <label>Name: <input type="text" id="name"></label>
+    <label>Class: <input type="text" id="class"></label>
+    <label>Level: <input type="number" id="level" min="1" max="20"></label>
+    <br>
+    <label>Level: <input type="hitpoints" id="hitpoints" min="1"></label> 
+    <label>Level: <input type="armorclass" id="armorclass" min="1"></label>
+  </div>
+
+  <!-- Draggable Boxes -->
+  <div id="inventory" class="box" contenteditable="true">Inventory: Write your items here...</div>
+  <div id="spells" class="box" contenteditable="true">Spells: List your spells...</div>
+  <div id="backstory" class="box" contenteditable="true">Backstory: Write your backstory here...</div>
+  <div id="attacks" class="box" contenteditable="true">Maneuvers & Attacks: Write your backstory here...</div>
+  <div id="weak-resist" class="box" contenteditable="true">Weaknesses/Resistances: Write your stats here...</div>
+  
+  <div class="buttons">
+    <button onclick="downloadCharacter()">Download Character</button>
+    <input type="file" id="upload" accept=".json">
+  </div>
+
+  <script src="javascript sheet"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+body {
+    font-family: sans-serif;
+    background: #f5f5f5;
+    padding: 20px;
+  }
+  
+  .field {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  .box {
+    position: absolute;
+    width: 250px;
+    height: 150px;
+    background: white;
+    border: 1px solid #999;
+    padding: 10px;
+    resize: both;
+    overflow: auto;
+    cursor: move;
+  }
+  
+  #inventory {
+    top: 150px;
+    left: 20px;
+  }
+  
+  #spells {
+    top: 150px;
+    left: 300px;
+  }
+  
+  .buttons {
+    margin-top: 320px;
+  }
+
+
+  .char-manager {
+    margin-bottom: 20px;
+  }
+  .char-manager input {
+    margin-left: 10px;
+  }
+  .char-manager button {
+    margin-left: 5px;
+  }
